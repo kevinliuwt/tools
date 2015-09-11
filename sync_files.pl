@@ -21,12 +21,12 @@ sub sync_files_usage
 
 #process the options
 my $num_arg = scalar(@ARGV);
-if ($num_arg != 2) {
+if ($num_arg != 1) {
     sync_files_usage();
     exit -1;
 }else{
     GetOptions(
-        "host|h:s"      	=> \$remote_host,
+	    #"host|h:s"      	=> \$remote_host,
         "path|p:s"       	=> \$remote_path,
     );
 };
